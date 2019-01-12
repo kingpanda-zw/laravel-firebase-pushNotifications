@@ -14,6 +14,9 @@ Add an alias to this package
 
 <pre>'PushNotification' => Edujugon\PushNotification\Facades\PushNotification::class,</pre>
 
+Puublish the package's configuration file to the application's own config directory
+
+<code>php artisan vendor:publish --provider="Edujugon\PushNotification\Providers\PushNotificationServiceProvider" --tag="config"</code>
 
 Set up your database in the .env file for login in to send the notification from inside your app
 
